@@ -1,0 +1,260 @@
+body {
+    background-color: #f1f1f1;
+    font-family: "ALK Sanet", sans-serif;
+}
+
+header {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 25px 30px;
+    background-color: #fff;
+}
+
+header .logo img {
+    width: 302px;
+    height: 67px;
+}
+
+.navigation {
+    width: 1200px;
+    margin: 0 auto;
+    height: 52px;
+    background-color: #48537e;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation div ul {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.navigation div ul a {
+    color: #FFF;
+    padding: 14px;
+    display: flex;
+    transition: all 0.3s ease-in-out;
+}
+
+.navigation div ul a:hover {
+    background-color: rgb(187, 187, 187);
+}
+
+.search  {
+    width: 52px;
+    height: 52px;
+    line-height: 52px;
+    background-color:  #c1c1c1;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.search:hover {
+    background-color: #969696;
+}
+
+main {
+    display: flex;
+    width: 1200px;
+    margin: auto;
+    padding: 35px 30px;
+    background-color: #fff;
+}
+
+.main-news {
+    flex: 2;
+    border-right: 1px solid #AAAAAA;
+    margin: 0 0 30px;
+    padding: 0 20px 0 0;
+}
+
+.other-news {
+    flex: 1;
+}
+
+.img-title img {
+    width: 743px;
+    height: auto;
+}
+
+.img-title h1 {
+    font-size: 30px;
+    margin: 10px 0 15px;
+}
+
+div.stats {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    font-size: 14px;
+    color: #AAAAAA;
+    border-top: 1px solid #AAAAAA;
+    border-bottom: 1px solid #AAAAAA;
+    margin: 7px 0;
+    padding: 5px 0;
+}
+
+div.socials {
+    display: flex;
+    font-size: 14px;
+    margin: 0 0 50px;
+    padding: 10px;
+    border-top: 1px solid #AAAAAA;
+    border-bottom: 1px solid #AAAAAA;
+}
+
+.soc_btn {
+    color: #fff;
+    margin: 0 5px 0 0;
+    padding: 10px 5px 15px 15px;
+    width: 109px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.twitter {
+    background-color: #08acee;
+}
+
+.facebook {
+    background-color: #3b579d;
+}
+
+.linkedin {
+    background-color: #000;
+}
+
+.content p {
+    font-size: 16px;
+    margin: 0 0 30px;
+}
+
+.other-news {
+    margin: 0 0 30px;
+    padding: 0 0 0 20px;
+}
+
+.new_news {
+    border-bottom: 4px solid #c1c1c1;
+    width: 355px;
+    margin: 0 0 35px;
+}
+
+.other-news h2 {
+    font-size: 18px;
+    color: #ffffff;
+    height: 32px;
+    width: 186px;
+    padding: 4px 15px 0;
+    background-color: #C1C1C1;
+}
+
+.small_news img {
+    width: 340px;
+    height: auto;
+
+}
+
+.small_news div {
+    margin: 0 0 13px;
+    padding: 0 0 13px;
+    border-bottom: 1px solid #AAAAAA;
+}
+
+footer {
+    background-color: #D6D6D6;
+    color: #444444;
+    padding: 10px 20px;
+    font-size: 15px;
+}
+
+.footer-info {
+    margin: auto;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.news-row {
+    display: flex;
+    gap: 20px;
+}
+
+div.similar_news {
+    border-bottom: 4px solid #C1C1C1;
+    margin: 0 0 25px;
+}
+
+.similar h2 {
+    height: 32px;
+    width: 200px;
+    color: #FFFFFF;
+    background-color: #C1C1C1;
+    padding: 4px 15px 0;
+
+    font-size: 18px;
+}
+
+.news-row div {
+    width: 227.6px;
+}
+
+.news-row div img {
+    width: 227.6px;
+}
+
+div.author {
+    display: flex;
+    gap: 5px;
+    width: 227.6px;
+    color: #AAAAAA;
+    margin: 7px 0;
+    padding: 5px 0;
+    font-size: 14px;
+    border-top: 1px solid #AAAAAA;
+    border-bottom: 1px solid #AAAAAA;
+}
+
+.img-container {
+    position: relative;
+}
+
+.img-container::before {
+    content: "";
+    width: 100%;
+    height: 96%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0, 0.1);
+    transition: all 0.5s ease-in-out;
+}
+
+.img-container:hover::before {
+    content: "";
+    width: 100%;
+    height: 96%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0, 0.7);
+}
+
+.paper {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    color: #fff;
+    font-size: 22px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out ;
+}
+
+.img-container:hover .paper {
+    top: 45%;
+    left: 50%;
+    opacity: 1;
+}
